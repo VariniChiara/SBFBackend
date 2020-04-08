@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ae7cc3c-b44d-474f-afb4-b44e49182b66" name="Default Changelist" comment="fixing chart creation without p,m,k">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/resources.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +85,7 @@
       <workItem from="1586029152968" duration="614000" />
       <workItem from="1586030902056" duration="2490000" />
       <workItem from="1586063780453" duration="392000" />
+      <workItem from="1586372966765" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="TestSBF.exe updated">
       <created>1580816101588</created>
@@ -163,6 +166,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixing calculateParams" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="753" y="1340" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586373690973">
+      <screen x="0" y="900" width="1920" height="1080" />
+    </state>
+    <state x="753" y="1340" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.900.1920.1080/240.0.1440.900@0.900.1920.1080" timestamp="1586373690973" />
     <state x="529" y="970" width="860" height="940" key="find.popup" timestamp="1586064026748">
       <screen x="0" y="900" width="1920" height="1080" />
     </state>

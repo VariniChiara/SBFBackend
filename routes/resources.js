@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
+const pako = require('pako');
 
 const fs  = require('fs');
 
@@ -32,6 +33,9 @@ router.post('/save', function (req, res) {
   const json = JSON.parse(JSON.stringify(req.body));
   const keys = Object.keys(json);
 
+  const elemFile = pako.ungzip(req.body.elem, { to: 'string' });
+  console.log(elemFile + 'ElemFile ');
+
   if (isWin) {
     console.log('is win' + isWin);
 
@@ -52,7 +56,7 @@ router.post('/save', function (req, res) {
   //writeElem
   let filePath_ = __dirname + elem;
   console.log(filePath_);
-  fs.writeFile(filePath_, json[keys[0]], function() { res.end();});
+  fs.writeFile(filePath_, elemFile, function() { res.end();});
 
   //writeNonElem
   filePath_ = __dirname + nonElem;
@@ -78,7 +82,7 @@ router.post('/save', function (req, res) {
   }
 
   //p, m ,k
-  let datasetStringArray = json[keys[0]].split('\n');
+  let datasetStringArray = elemFile.split('\n');
   let n = datasetStringArray.length-1;
   const commandParams = calculateParams( n, json[keys[4]], json[keys[5]], json[keys[6]]);
   if(commandParams === '') {
