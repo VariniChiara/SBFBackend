@@ -56,7 +56,9 @@ router.post('/save', function (req, res) {
   //writeElem
   let filePath_ = __dirname + elem;
   console.log(filePath_);
+
   fs.writeFile(filePath_, elemFile, function() { res.end();});
+
 
   //writeNonElem
   filePath_ = __dirname + nonElem;
@@ -70,7 +72,7 @@ router.post('/save', function (req, res) {
   if(json[keys[3]]  !== "") {
 
     filePath_ = __dirname + saltFile;
-     fs.writeFile(filePath_, json[keys[3]], function () {
+    fs.writeFile(filePath_, json[keys[3]], function () {
       res.end();
     });
 
@@ -92,7 +94,7 @@ router.post('/save', function (req, res) {
   }
 
   console.log('calculated: '+ ex);
- // res.send('Ok');
+  // res.send('Ok');
   res.end();
 });
 
